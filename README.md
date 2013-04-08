@@ -22,11 +22,13 @@ We're going to write a little app that provides a jukebox service. We're going t
 * Generate a controller and model:
 
     padrino g controller Tracks get:play get:index post:search
+    
     padrino g model Track title:string track_url:string soundcloud_id:integer permalink_url:string artwork_url:string description:string duration:integer genre:string bpm:integer comment_count:integer download_count:integer favouritings_count:integer
 
 * Create a database suitable for the model:
 
     padrino rake ar:create:all
+    
     padrino rake ar:migrate
 
 * Run padrino server
