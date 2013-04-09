@@ -1,0 +1,8 @@
+<html>
+	<div>
+Controller: @track = Track.find(params[:id]) client = Soundcloud.new(:client_id => 'd95790c46856021f7718e7ec26913e55') @sound_cloud_widget = client.get('/oembed', :url => @track.player_url)['html']
+
+View: <%= @sound_cloud_widget.html_safe %>
+
+	</div>
+	</html>
